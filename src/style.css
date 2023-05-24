@@ -1,0 +1,13 @@
+.personajes {
+    width: 95%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr)); 
+    gap: 4em;
+    margin-top: 15px;
+}
+ 
+.caracteristica {
+    border: 1px solid black;
+    padding: 10px;
+}
