@@ -6,10 +6,9 @@ import data from './data/pokemon/pokemon.js';
 console.log(data.pokemon[0]);
 const enlistar= document.getElementById("Pokemon");
 const pokeList= data.pokemon;
-pokeList.forEach(element => enlistar.innerHTML += `<div class="caracteristica"> <p>${element.name}</p><img src=${element.img}> <div>${element.type}</div><div>${element.num}</div></div>`);
+pokeList.forEach(element => enlistar.innerHTML += `<div class="caracteristica"> <p>${element.name}</p><img src=${element.img}>  <div>${element.type}</div><div>${element.num}</div></div>`);
 const select= document.getElementById("ordenamiento");
 select.addEventListener("change", () => {
     const selectedOpttion=select.value
     console.log(selectedOpttion)
 });
- 
