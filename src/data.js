@@ -16,7 +16,12 @@ export const ordenarPokemones = (ordenamiento) => {
 console.log(sortedData)
 return sortedData
 };
+  //Filtra la data por tipo de pokemon
+ export const filterData = (data, condition) => {
+  let result =  data.pokemon.filter(item => item.type.includes(condition.toLowerCase()));
+  console.log(result)
+  return result;
+};                  
 
-export const anotherExample = () => {
-  return 'OMG';
-};
+
+

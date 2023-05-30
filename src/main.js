@@ -1,6 +1,7 @@
 import { ordenarPokemones } from './data.js';
 // import data from './data/lol/lol.js';
 import data from './data/pokemon/pokemon.js';
+import { filterData } from './data.js';
 // import data from './data/rickandmorty/rickandmorty.js';
 //console.log(example, data);
 console.log(data.pokemon[0]);
@@ -21,3 +22,10 @@ window.onload = function(){
     console.log("carga")
     mostrarpokemones(pokeList)
 }
+//Trae a los pokemons por tipo
+const seleccionarTipo = document.getElementById("seleccionar-tipo");
+seleccionarTipo.addEventListener("change", () => {
+    let type = seleccionarTipo.options[seleccionarTipo.selectedIndex].value;
+    console.log(type)
+    mostrarpokemones(filterData(data, type));
+});  
