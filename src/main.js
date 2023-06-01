@@ -9,7 +9,7 @@ const enlistar= document.getElementById("Pokemon");
 const pokeList= data.pokemon;
 function mostrarpokemones(listadoPokemones){ 
 enlistar.innerHTML="";
-listadoPokemones.forEach(element => enlistar.innerHTML += `<div class="caracteristica"> <p>${element.name}</p><img src=${element.img}>  <div>${element.type}</div><div>${element.num}</div></div>`);
+listadoPokemones.forEach(element => enlistar.innerHTML += `<div class="caracteristica"> <div>${element.num}</div><p>${element.name}</p><img src=${element.img}>  <div>${element.type}</div></div>`);
 }
 const select= document.getElementById("ordenamiento");
 select.addEventListener("change", () => {
@@ -27,5 +27,10 @@ const seleccionarTipo = document.getElementById("seleccionar-tipo");
 seleccionarTipo.addEventListener("change", () => {
     let type = seleccionarTipo.options[seleccionarTipo.selectedIndex].value;
     console.log(type)
-    mostrarpokemones(filterData(data, type));
+    if(type=="All"){
+        mostrarpokemones(pokeList)
+    }else{
+        mostrarpokemones(filterData(data, type));
+    }
+    
 });  
