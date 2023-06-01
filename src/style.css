@@ -4,7 +4,8 @@ main{
     text-align: center;
     color: black;
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(16, 89, 226);
+    
+    
 }
 
 .selectorOrdenamiento{
@@ -46,14 +47,15 @@ main{
 }
 
 .personajes {
-    
     width: 70%;
     display: grid;
     justify-items: center;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color: rgba(50, 54, 56, 0.7);
-      justify-content: center;
+    justify-content: center;
     align-items: center;
+    padding-bottom: 60px;
+    
     
 }
  
@@ -85,6 +87,7 @@ main{
  body{
     margin: 0;
     padding: 0;
+    background-color: rgb(16, 89, 226);
   
     
 }
