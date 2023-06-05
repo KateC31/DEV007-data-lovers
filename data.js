@@ -1,5 +1,6 @@
 import data from "./data/pokemon/pokemon.js";
 
+// Función para ordenar los pokemones
 export const ordenarPokemones = (ordenamiento) => {
   const sortedData = data.pokemon.sort(function (a, b) {
     if (ordenamiento === "A-Z") {

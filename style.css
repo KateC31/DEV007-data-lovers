@@ -1,3 +1,4 @@
+/* Estilos para el contenedor principal */
 main{
     display: flex;
     flex-direction: column;
@@ -7,17 +8,20 @@ main{
     
     
 }
-
+/* Estilos para el selector de ordenamiento */
 .selectorOrdenamiento{
     font-size: 25px;
     padding: 0.5rem 1rem 0.5rem 2rem;
     
 }
 
+/* Estilos para el selector de filtrado */
 .selectorFiltrado{
     font-size: 25px;
     padding: 0.5rem 1rem 0.5rem 2rem;
 }
+
+/* Estilos para el encabezado */
 .encabezado{
     
     background-color:red;
@@ -26,11 +30,13 @@ main{
      
 }
 
+/* Estilos para la parte izquierda del encabezado */
 .encabezadoIzquierda{
  width: 35%;
  display: flex;
 }
 
+/* Estilos para la parte derecha del encabezado */
 .encabezadoDerecha{
     display: flex;
     width: 65%;
@@ -38,6 +44,8 @@ main{
     align-items: center;
     justify-content: space-evenly;
 }
+
+/* Estilos para el contenido principal */
 .abajo{
      display: flex;
      justify-content: center;
@@ -45,7 +53,7 @@ main{
      width: 100vw;
     margin-top: 5%;
 }
-
+/* Estilos para los personajes */
 .personajes {
     width: 70%;
     display: grid;
@@ -59,6 +67,7 @@ main{
     
 }
  
+/* Estilos para las características de los personajes */
 .caracteristica {
     
     border: 1px solid black;
@@ -72,18 +81,7 @@ main{
    
     
 }
-
-/*body{
-    background-image:url(imgpokemon/imagenfondopokecards.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-color:rgba(178,209,229,0.7);
-    margin: 300px;
-    padding: 2% 0;
-   
-}
-*/
+/* Estilos para el cuerpo de la página */
  body{
     margin: 0;
     padding: 0;
@@ -93,10 +91,3 @@ main{
 }
 
 
-/*.personajes{
-
-    background-color: rgba(50, 54, 56, 0.7);;
-    margin: 50px 50px;
-    
-    
-}

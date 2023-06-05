@@ -3,18 +3,23 @@
   <head>
     <meta charset="utf-8" />
     <title>Pokecards</title>
+    <!--Enalce a archivo CSS-->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+  <!--Contenido principal en main,envuelve todo el contenido visible-->
     <main>
+      <!--Encabezado-->
       <div class="encabezado">
         <div class="encabezadoIzquierda">
+          <!-- Logo del encabezado-->
           <img
             src="./imgpokemon/encabezado2Pokecards.png"
             class="logoEncabezado"
             />
         </div>
         <div class="encabezadoDerecha">
+        <!--Selector de ordenamiento, desplegable para elegir opciones-->
           <select
             id="ordenamiento"
             class="selectorOrdenamiento"
@@ -23,6 +28,7 @@
             <option value="A-Z">Ascendente</option>
             <option value="Z-A">Descendente</option>
           </select>
+        <!-- Selector de filtrado, despleglable para elegir opciones-->
           <select
             id="seleccionar-tipo"
             class="selectorFiltrado"
@@ -48,10 +54,12 @@
           </select>
         </div>
       </div>
+      <!--Contenido principal-->
       <div class="abajo">
         <div id="Pokemon" class="personajes"></div>
       </div>
     </main>
+    <!--Enlace a archivo JavaScript-->
     <script src="main.js" type="module"></script>
   </body>
 </html>
